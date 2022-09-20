@@ -135,6 +135,31 @@ header:hover {
     font-size: 20px;
 }
 
+.bannerBOX {
+    padding-top: 80px;
+}
+
+.buttonBanner {
+    display: block;
+    width: 115px;
+    margin: auto;
+    background-color: #FF6400;
+    border: 0px;
+    padding: 8px 20px;
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+
+.textBanner {
+    position: absolute;
+    right: 300px;
+    bottom: 50%;
+}
+
+.buttonBanner:hover {
+    background-color: aqua;
+    transition: 500ms;
+}
+
 @media screen and (max-width: 1100px) {
     .toggle {
         display: block;

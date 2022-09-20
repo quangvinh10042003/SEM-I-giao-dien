@@ -1,14 +1,16 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Sem1Project</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <link rel="stylesheet" href="../style/retgister.css">
+    <meta charset="utf-8">
+    <title>Sem1Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../style/retgister.css">
 </head>
+
 <body>
     <header>
         <div class="container-fluid containerFull">
@@ -77,30 +79,30 @@
                 <div class="top">
                     <h5>CREATE YOUR ACCOUNT</h5>
                     <div class="steps">
-                            <div class="number" style="background-color: #F86902;font-size: 23px;">1</div>
-                            <div class="strikethrough" style="background-color: #F86902"></div>
-                            <div class="number"  style="background-color:white;font-size: 23px;">2</div>
-                            <div class="strikethrough"></div>
-                            <div class="number" style="background-color:white;font-size: 23px;">3</div>
+                        <div class="number" style="background-color: #F86902;font-size: 23px;">1</div>
+                        <div class="strikethrough" style="background-color: #F86902"></div>
+                        <div class="number" style="background-color:white;font-size: 23px;">2</div>
+                        <div class="strikethrough"></div>
+                        <div class="number" style="background-color:white;font-size: 23px;">3</div>
                     </div>
                 </div>
                 <div class="mid">
                     <form [formGroup]="formIn4" (ngSubmit)="register()">
                         <div class="form-group">
-                          <label for="exampleInputEmail1">Email *</label>
-                          <input type="email" class="form-control" id="" aria-describedby="emailHelp" placeholder="Please enter your email" formControlName="email">
+                            <label for="exampleInputEmail1">Email *</label>
+                            <input type="email" class="form-control" id="" aria-describedby="emailHelp" placeholder="Please enter your email" formControlName="email">
                         </div>
                         <div class="form-group">
-                          <label for="exampleInputEmail1">FullName *</label>
-                          <input type="email" class="form-control" id="" aria-describedby="emailHelp" placeholder="Please enter your name" formControlName="FullName">
+                            <label for="exampleInputEmail1">FullName *</label>
+                            <input type="email" class="form-control" id="" aria-describedby="emailHelp" placeholder="Please enter your name" formControlName="FullName">
                         </div>
                         <div class="form-group">
-                          <label for="exampleInputEmail1">Password *</label>
-                          <input type="password" class="form-control" id="" aria-describedby="emailHelp" placeholder="enter password here" formControlName="password">
+                            <label for="exampleInputEmail1">Password *</label>
+                            <input type="password" class="form-control" id="" aria-describedby="emailHelp" placeholder="enter password here" formControlName="password">
                         </div>
                         <div class="form-group">
-                          <label for="exampleInputPassword1">Enter again password *</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="enter again password here" formControlName="confirmPassword">
+                            <label for="exampleInputPassword1">Enter again password *</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="enter again password here" formControlName="confirmPassword">
                         </div>
                         <div class="social_network">
                             <div class="left">
@@ -120,7 +122,7 @@
                         </div>
                         <div class="submit">
                             <div class="row">
-                                <div class="col-md-7" >
+                                <div class="col-md-7">
                                     <button>You have already an account</button>
                                 </div>
                                 <div class="col-md-4">
@@ -128,10 +130,11 @@
                                 </div>
                             </div>
                         </div>
-                      </form>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
