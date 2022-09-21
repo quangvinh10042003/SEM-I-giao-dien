@@ -138,6 +138,15 @@ header:hover {
     color: #FF6400;
 }
 
+footer {
+    background-color: #000;
+}
+
+footer p {
+    padding: 20px;
+    color: #ffff;
+}
+
 @media screen and (max-width: 1100px) {
     .toggle {
         display: block;
