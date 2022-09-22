@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
+
 header {
     background-image: linear-gradient(to bottom, black, rgb(69, 69, 69));
     color: #ffff;
@@ -176,10 +176,15 @@ header:hover {
     .rightNAV ul li a i {
         font-size: 16px;
     }
-    .aaaa {}
 }
+<<<<<<< HEAD
 .background{
     background-image: url('../image_nkt/hinh-anh-dan-pc-khung-dep-va-chat-nhat.jpg');
+=======
+
+.background {
+    background-image: url('https://toigingiuvedep.vn/wp-content/uploads/2021/08/hinh-anh-dan-pc-khung-dep-va-chat-nhat.jpg');
+>>>>>>> 84dc73b66a1b6d58a8faae72a6236163b04eb221
     width: 100%;
     height: 1000px;
     background-repeat: no-repeat;
@@ -189,7 +194,7 @@ header:hover {
     color: white;
 }
 
-.register{
+.register {
     background-color: black;
     width: 625px;
     height: 800px;
@@ -197,13 +202,15 @@ header:hover {
     opacity: 0.9;
     margin-top: 40px;
 }
-.register .top h5{
+
+.register .top h5 {
     font-size: 26px;
     color: white;
     text-align: center;
     padding-top: 50px;
 }
-.steps{
+
+.steps {
     display: flex;
     color: black;
     font-size: 20px;
@@ -214,49 +221,59 @@ header:hover {
     padding-left: 115px;
     font-weight: 600;
 }
-.steps .number{
+
+.steps .number {
     border-radius: 50%;
     padding: 10px 22px;
 }
-.strikethrough{
+
+.strikethrough {
     background-color: white;
     width: 110px;
     height: 10px;
 }
-form{
+
+form {
     padding: 50px;
 }
-form label{
+
+form label {
     margin-bottom: 5px;
 }
-.form-group{
+
+.form-group {
     margin: 20px 0px;
 }
-.form-group input{
+
+.form-group input {
     padding: 20px;
     border-radius: 1px;
 }
-.social_network .left h6{
+
+.social_network .left h6 {
     font-size: 24px;
 }
-.social_network{
+
+.social_network {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 10px;
 }
-.social_network .right{
+
+.social_network .right {
     display: flex;
     align-items: center;
 }
 
-.social_network .right .icon i{
+.social_network .right .icon i {
     font-size: 20px;
     margin: 0px 10px;
     border: 2px solid white;
     padding: 10px;
     border-radius: 50%;
 }
+<<<<<<< HEAD
 .submit{
     margin-top: 25px;
 }
@@ -265,6 +282,11 @@ form label{
 }
 .mid .col-md-5 button{
     background-color:#F86902 ;
+=======
+
+.mid button {
+    background-color: #F86902;
+>>>>>>> 84dc73b66a1b6d58a8faae72a6236163b04eb221
     width: 100%;
     padding: 10px;
     /* margin: 20px 0px; */
@@ -273,6 +295,7 @@ form label{
     border: none;
     color: white;
 }
+<<<<<<< HEAD
 .submit .col-md-7 button{
     font-size: 18px;
     padding: 12px;
@@ -399,4 +422,9 @@ form label{
         background-color: #cd5600 ;
         transition: 0.5s all;
     }
+=======
+
+.submit .col-md-7 {
+    margin-right: 46px;
+>>>>>>> 84dc73b66a1b6d58a8faae72a6236163b04eb221
 }

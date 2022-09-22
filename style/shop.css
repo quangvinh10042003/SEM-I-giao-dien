@@ -1,0 +1,216 @@
+body {
+    background-color: black;
+}
+
+.main {
+    padding-top: 100px;
+}
+
+.headerNAV {
+    position: absolute;
+    top: 90px;
+}
+
+.banner {
+    height: 400px;
+}
+
+.banner img {
+    height: 100%;
+}
+
+.zBanner {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.77));
+}
+
+.banner h1 {
+    font-size: 64px;
+    color: #FF6400;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.category span {
+    font-size: 20px;
+}
+
+.page span {
+    color: #fff;
+}
+
+select {
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 0px;
+    border: none;
+    border: 1px solid rgb(147, 147, 147);
+    color: #fff;
+    background-color: black;
+}
+
+.bgShop {
+    background-color: #2E2E2E;
+}
+
+.categoryList {
+    background-color: #2E2E2E !important;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: -25px;
+}
+
+.categoryList a:first-child {
+    border-radius: 0;
+}
+
+.categoryList a:last-child {
+    border-radius: 0;
+}
+
+.categoryList a {
+    background-color: black;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.categoryList a:hover {
+    color: #FF6400;
+    background-color: #000;
+}
+
+.itemSellers .boxImg {
+    padding: 0px 20px;
+}
+
+.itemSellers {
+    border: 1px solid #FF6400;
+}
+
+.itemSellers .price {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.itemSellers .name {
+    padding: 0px 0px;
+}
+
+.choseItem {
+    padding: 0px 35px;
+    padding-top: 10px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.choseItem a {
+    padding: 5px 10px;
+    border: 1px solid rgb(73, 73, 73);
+    color: rgb(94, 94, 94);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.itemSellers .name {
+    height: 60px;
+}
+
+.choseItem a:hover {
+    border: 1px solid #ffff;
+    color: #ffff;
+}
+
+.productsList {
+    margin-top: 35px;
+}
+
+.navigatePages {
+    float: right;
+}
+
+.navigatePages button {
+    padding: 3px 10px;
+    border: 1px solid rgb(150, 150, 150);
+    background-color: #2E2E2E;
+    color: rgb(150, 150, 150);
+    cursor: pointer;
+}
+
+.navigatePages button:hover {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+@media screen and (max-width:1024px) {
+    .itemSellers {
+        margin-top: 20px;
+    }
+    .itemSellers .boxImg {
+        padding: 0px 15px;
+    }
+    .itemSellers .choseItem {
+        padding: 0px 45px;
+    }
+    .itemSellers .name {
+        padding: 0px 15px;
+    }
+    .itemSellers {
+        padding: 0px 15px;
+    }
+    .choseItem a {
+        padding: 5px 8px
+    }
+    .category {
+        margin-left: 10px;
+        border: 1px solid #fff;
+        padding: 5px 15px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .itemSellers {
+        padding: 0;
+    }
+    .banner h1 {
+        font-size: 32px;
+    }
+    .bestSeller h1 {
+        font-size: 24px;
+    }
+    .itemSellers .choseItem {
+        padding: 0px 30px;
+    }
+    .category {
+        padding: 3px 6px;
+    }
+    .category span {
+        font-size: 12px;
+    }
+    select {
+        padding: 7px 7px;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+    .page span {
+        font-size: 12px;
+    }
+    .banner h1 {
+        top: 170px;
+    }
+    .banner {
+        height: 260px;
+    }
+    .zBanner {
+        height: 260px;
+    }
+    .choseItem a {
+        font-size: 12px;
+    }
+}
