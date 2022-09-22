@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 header {
     background-image: linear-gradient(to bottom, black, rgb(69, 69, 69));
@@ -176,7 +175,6 @@ header:hover {
     .rightNAV ul li a i {
         font-size: 16px;
     }
-    .aaaa {}
 }
 .background{
     background-image: url('../image_nkt/hinh-anh-dan-pc-khung-dep-va-chat-nhat.jpg');
@@ -192,7 +190,7 @@ header:hover {
 .register{
     background-color: black;
     width: 625px;
-    height: 800px;
+    height: 700px;
     margin: 0 auto;
     opacity: 0.9;
     margin-top: 40px;
@@ -274,6 +272,7 @@ form label{
     color: white;
 }
 .submit .col-md-7 button{
+    width: 100%;
     font-size: 18px;
     padding: 12px;
     background-color:white;
