@@ -42,7 +42,7 @@ header:hover {
 }
 
 .liLevel1 {
-    z-index: 999;
+    z-index: 50;
 }
 
 .menu ul li a {
@@ -52,20 +52,6 @@ header:hover {
 
 .menu ul li a i {
     font-size: 16px;
-}
-
-.menu ul li:hover .aLevel1 {
-    color: #FF6400;
-}
-
-.menu ul li:hover .aLevel1 i {
-    transform: rotate(180deg);
-    transition: 300ms;
-}
-
-.menu ul li:hover .ulHover {
-    top: 80px;
-    transition: 500ms;
 }
 
 .ulHover {
@@ -78,7 +64,7 @@ header:hover {
     background: black;
     width: 240px;
     overflow: hidden;
-    z-index: 995;
+    z-index: 999;
 }
 
 .ulHover li {
@@ -92,6 +78,20 @@ header:hover {
 
 .ulHover li a {
     margin-left: -10px;
+}
+
+.menu ul li:hover .aLevel1 {
+    color: #FF6400;
+}
+
+.menu ul li:hover .aLevel1 i {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.menu ul li:hover .ulHover {
+    top: 80px;
+    transition: 800ms;
 }
 
 .ulHover li:hover a {
@@ -138,13 +138,78 @@ header:hover {
     color: #FF6400;
 }
 
+.menuMobile {
+    background-color: #000;
+}
+
+.formSearch {
+    position: relative;
+}
+
+.formSearch input {
+    padding: 7px 20px;
+    width: 300px;
+    background-color: rgb(52, 52, 52);
+    border: none;
+}
+
+.formSearch i {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    color: rgb(199, 199, 199);
+}
+
+.buttonClose {
+    display: block;
+    color: #ffff;
+    font-size: 20px;
+    background-color: #000;
+    border: none;
+    padding: 5px 10px;
+}
+
 footer {
     background-color: #000;
 }
 
 footer p {
-    padding: 20px;
+    padding: 30px;
+    padding-top: 40px;
     color: #ffff;
+}
+
+.buttonDropdown {
+    width: 300px;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 0px;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #000;
+    color: #ffff;
+}
+
+.buttonDropdown:hover {
+    color: #FF6400 !important;
+    background-color: #000 !important;
+}
+
+.ulDropdown {
+    border-radius: 0px;
+    background-color: #000;
+}
+
+.ulDropdown li {
+    width: 310px;
+    padding: 10px 20px;
+    background-color: #000;
+    border-bottom: 1px solid rgb(55, 55, 55);
+    margin-left: -5px;
+}
+
+.ulDropdown li:hover a {
+    color: #FF6400;
 }
 
 @media screen and (max-width: 1100px) {
@@ -172,6 +237,7 @@ footer p {
     }
     .divImg {
         width: 140px;
+        margin-left: 40px;
     }
     .divImg img {
         margin-top: 22px;
@@ -181,5 +247,11 @@ footer p {
     }
     .rightNAV ul li a i {
         font-size: 16px;
+    }
+    .rightNAV ul {
+        padding-left: 0;
+    }
+    .rightNAV ul li {
+        padding: 0px;
     }
 }

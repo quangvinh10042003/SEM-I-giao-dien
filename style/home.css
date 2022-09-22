@@ -6,6 +6,9 @@ body {
     height: 100%;
 }
 
+
+/* header  */
+
 header {
     background-image: linear-gradient(to bottom, black, rgb(69, 69, 69));
     color: #ffff;
@@ -304,19 +307,25 @@ header:hover {
 }
 
 .flexRowFooter p {
+    cursor: pointer;
     line-height: 10px;
     color: #949494;
+}
+
+.itemSellers .name {
+    height: 60px;
 }
 
 
 /* footer  */
 
 footer {
+    margin: 0;
     background-color: #000;
 }
 
 footer p {
-    padding: 20px;
+    padding-top: 30px;
     color: #ffff;
 }
 
@@ -446,5 +455,9 @@ footer p {
     }
     .carouselButton {
         width: 40px;
+    }
+    .choseItem a {
+        padding: 5px 10px;
+        font-size: 12px;
     }
 }
