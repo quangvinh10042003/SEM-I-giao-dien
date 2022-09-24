@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../style/compare.css">
+    <link rel="stylesheet" href="../style/header.css">
+</head>
+
+<body>
+    <!-- header  -->
+    <header>
+        <div class="container-fluid containerFull">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="divImg">
+                        <img class="card-img" src="../images/vinhImg/logo.png" alt="">
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li class="position-relative liLevel1">
+                                <a class="aLevel1">Products <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="ulHover">
+                                    <li><a>Motherboards</a></li>
+                                    <li><a>Monitors</a></li>
+                                    <li><a>Memorys</a></li>
+                                    <li><a>Graphic Cards</a></li>
+                                    <li><a>PC Cases</a></li>
+                                    <li><a>CPU Coolers</a></li>
+                                    <li><a>Power Supplys</a></li>
+                                    <li><a>Laptops</a></li>
+                                </ul>
+                            </li>
+                            <li class="position-relative liLevel1">
+                                <a class="aLevel1">Explore <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="ulHover">
+                                    <li><a>News</a></li>
+                                    <li><a>Blogs</a></li>
+                                    <li><a>Wallpapers</a></li>
+                                    <li><a>Comparision</a></li>
+                                </ul>
+                            </li>
+                            <li class="position-relative liLevel1">
+                                <a class="aLevel1">Service <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="ulHover">
+                                    <li><a>Warranty</a></li>
+                                    <li><a>About Us</a></li>
+                                    <li><a>About Gigabyte</a></li>
+                                    <li><a>Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li class="position-relative liLevel1"><a class="aLevel1">PC Building</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="rightNAV">
+                        <ul>
+                            <li class="liSearch"><a><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            <li><a><i class="fa-solid fa-user"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="logoGiga">
+                        <img class="card-img" src="../images/vinhImg/logo_gigabyte_white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header menu mobile  -->
+
+    <div class="offcanvas offcanvas-start menuMobile" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <div class="formSearch">
+                <input type="text" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <button class="buttonClose" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-x"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
+                    <li><a class="dropdown-item" href="#">Motherboard</a></li>
+                    <li><a class="dropdown-item" href="#">PC Case</a></li>
+                    <li><a class="dropdown-item" href="#">Moninitor</a></li>
+                    <li><a class="dropdown-item" href="#">Graphics Card</a></li>
+                    <li><a class="dropdown-item" href="#">Memory</a></li>
+                    <li><a class="dropdown-item" href="#">Solid State Drive</a></li>
+                    <li><a class="dropdown-item" href="#">CPU Cooler</a></li>
+                    <li><a class="dropdown-item" href="#">Power Supply</a></li>
+                    <li><a class="dropdown-item" href="#">Laptop</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Explore
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
+                    <li><a class="dropdown-item" href="#">News</a></li>
+                    <li><a class="dropdown-item" href="#">Blogs</a></li>
+                    <li><a class="dropdown-item" href="#">Wallpaper</a></li>
+                    <li><a class="dropdown-item" href="#">Comparision</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Service
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
+                    <li><a class="dropdown-item" href="#">Warranty</a></li>
+                    <li><a class="dropdown-item" href="#">About AORUS</a></li>
+                    <li><a class="dropdown-item" href="#">About GIGABYTE</a></li>
+                    <li><a class="dropdown-item" href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <button class="buttonDropdown">PC Building</button>
+        </div>
+    </div>
+
+    <!-- content  -->
+    <div class="banner">
+        <img src="../images/vinhImg/banner/F_20211026111445n2Cr2w.JPG" class="card-img" alt="">
+        <div class="zBanner"></div>
+        <h1>Product Comparision</h1>
+    </div>
+    <div class="container-fluid containerFull pb-5">
+        <div class="main">
+            <div class="select">
+                <select name="" id="">
+                    <option value="" selected disabled hidden>Choose Product</option>
+                    <option value="">Motherboard</option>
+                    <option value="">Monitor</option>
+                    <option value="">PC Case</option>
+                    <option value="">Graphics Card</option>
+                    <option value="">CPU Cooler</option>
+                    <option value="">Power Supply</option>
+                    <option value="">Memory</option>
+                    <option value="">Solid State Drive</option>
+                    <option value="">Laptop</option>
+                </select>
+            </div>
+            <div class="boxSearchProduct">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5">
+                        <input class="inputCompare mb-md-0 mb-3" type="text" value="B660M AORUS ELITE Motherboard">
+                        <div class="boxImg float-end d-md-block d-none">
+                            <img class="card-img" src="../images/vinhImg/detail/mainboard/mb1.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 d-md-block d-none">
+                        <button class="compareButton">COMPARE</button>
+                        <p class="text-center vs">VS</p>
+                    </div>
+                    <div class="col-lg-5 col-md-5">
+                        <input class="inputCompare" type="text" value="Z59 AORUS MASTER Motherboard">
+                        <div class="boxImg d-md-block d-none">
+                            <img class="card-img" src="../images/vinhImg/detail/mainboard/mb3.webp" alt="">
+
+                        </div>
+                        <div class="row d-md-none d-flex">
+                            <div class="col-5">
+                                <div class="boxImg">
+                                    <img class="card-img" src="../images/vinhImg/detail/mainboard/mb1.webp" alt="">
+                                    <p class="text-light fw-bold">B660M AORUS ELITE Motherboard</p>
+
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <p class="text-center vs">VS</p>
+                            </div>
+                            <div class="col-5">
+                                <div class="boxImg">
+                                    <img class="card-img" src="../images/vinhImg/detail/mainboard/mb3.webp" alt="">
+                                    <p class="text-light fw-bold">Z59 AORUS MASTER Motherboard</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="infoProductList">
+                <div class="row rowFirst">
+                    <div class="col-md-2 col-12">
+                        <div class="infoGroup">
+                            <p class="fw-bold text-light text-md-left text-center">Form Factor</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-6">
+                        <p class="text-light">Micro ATX Form Factor; 24.4cm x 24.4cm</p>
+                    </div>
+                    <div class="col-md-5 col-6">
+                        <p class="text-light">ATX Form Factor; 30.5cm x 24.4cm</p>
+                    </div>
+                </div>
+                <div class="row rowSecond">
+                    <div class="col-md-2 col-12">
+                        <div class="infoGroup">
+                            <p class="fw-bold text-light text-md-left text-center">Operating System</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-6">
+                        <p class="text-light">Support for Windows 11 64-bit</p>
+                        <p class="text-light">Support for Windows 10 64-bit</p>
+                    </div>
+                    <div class="col-md-5 col-6">
+                        <p class="text-light">Support for Windows 10 64-bit</p>
+                    </div>
+                </div>
+                <div class="row rowFirst">
+                    <div class="col-md-2 col-12">
+                        <div class="infoGroup">
+                            <p class="fw-bold text-light text-md-left text-center">Onboard Graphics</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-6">
+                        <p class="text-light">Integrated Graphics Processor-Intel HD Graphics support: </p>
+                        <p class="text-light mt-1">
+                            <br> 1 x HDMI port, supporting a maximum resolution of 4096x2160@60 Hz * Support for HDMI 2.1 version and HDCP 2.3. ** Support native HDMI 2.1 TMDS compatible ports
+                            <br> 1 x DisplayPort, supporting a maximum resolution of 4096x2304@60 Hz * Support for DisplayPort 1.2 version and HDCP 2.3
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-6">
+                        <p class="text-light">Integrated Graphics Processor-Intel HD Graphics support: </p>
+                        <p class="text-light mt-1">
+                            <br> 1 x HDMI port, supporting a maximum resolution of 4096x2160@60 Hz * Support for HDMI 2.1 version and HDCP 2.3. ** Support native HDMI 2.1 TMDS compatible ports
+                            <br> 1 x DisplayPort, supporting a maximum resolution of 4096x2304@60 Hz * Support for DisplayPort 1.2 version and HDCP 2.3
+                        </p>
+                    </div>
+                </div>
+                <div class="row rowSecond">
+                    <div class="col-md-2 col-12">
+                        <div class="infoGroup">
+                            <p class="fw-bold text-light text-md-left text-center">Memory</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-6">
+                        <p class="text-light">Support for DDR4 5333(O.C.)/ DDR4 5133(O.C.)/ DDR4 5000(O.C.)/ 4933(O.C.)/ 4800(O.C.)/ 4700(O.C.)/ 4600(O.C.)/ 4500(O.C.)/ 4400(O.C.)/ 4300(O.C.)/4266(O.C.) / 4133(O.C.) / 4000(O.C.) / 3866(O.C.) / 3800(O.C.) / 3733(O.C.) / 3666(O.C.)
+                            / 3600(O.C.) / 3466(O.C.) / 3400(O.C.) / 3333(O.C.) / 3300(O.C.) / 3200/ 3000/ 2933/ 2666/ 2400/ 2133 MHz memory modules</p>
+                    </div>
+                    <div class="col-md-5 col-6">
+                        <p class="text-light">Support for DDR4 5333(O.C.)/ DDR4 5133(O.C.)/ DDR4 5000(O.C.)/ 4933(O.C.)/ 4800(O.C.)/ 4700(O.C.)/ 4600(O.C.)/ 4500(O.C.)/ 4400(O.C.)/ 4300(O.C.)/4266(O.C.) / 4133(O.C.) / 4000(O.C.) / 3866(O.C.) / 3800(O.C.) / 3733(O.C.) / 3666(O.C.)
+                            / 3600(O.C.) / 3466(O.C.) / 3400(O.C.) / 3333(O.C.) / 3300(O.C.) / 3200/ 3000/ 2933/ 2666/ 2400/ 2133 MHz memory modules</p>
+                    </div>
+                </div>
+                <div class="row rowFirst">
+                    <div class="col-md-2 col-12">
+                        <div class="infoGroup">
+                            <p class="fw-bold text-light text-md-left text-center">Chipset</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-6">
+                        <p class="text-light">Intel B660 Express Chipset</p>
+                    </div>
+                    <div class="col-md-5 col-6">
+                        <p class="text-light">Intel Z590 Express Chipset</p>
+                    </div>
+                </div>
+                <div class="row rowSecond">
+                    <div class="col-md-2 col-12">
+                        <div class="infoGroup">
+                            <p class="fw-bold text-light text-md-left text-center">LAN</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-6">
+                        <p class="text-light">Realtek 2.5GbE LAN chip (2.5 Gbps/1 Gbps/100 Mbps)</p>
+                    </div>
+                    <div class="col-md-5 col-6">
+                        <p class="text-light">Aquantia 10GbE LAN chip (10 Gbit/5 Gbit/2.5 Gbit/1 Gbit/100 Mbit)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bgFooter">
+        <div class="logoFooter pt-5">
+            <img src="../images/vinhImg/logo_svg.2fc451ee.svg" class="card-img" alt="">
+        </div>
+        <h6 class="mt-3 text-center text-light">TEAM UP FIGHT ON</h6>
+        <div class="row flexRowFooter">
+            <div class="col-lg-2 col-md-3 textFooter">
+                <p class="text-light font-weight-bold mb-4 mt-md-0 mt-3">About US</p>
+                <p>About AORUS</p>
+                <p>About Gigabyte</p>
+            </div>
+            <div class="col-lg-2 col-md-3">
+                <p class="text-light font-weight-bold mb-4 mt-md-0 mt-3">Products</p>
+                <p>Motherboards</p>
+                <p>Monitors</p>
+                <p>PC Cases</p>
+                <p>Power Supply</p>
+                <p>Graphics Cards</p>
+                <p>Memorys</p>
+                <p>SSD</p>
+                <p>Laptops</p>
+            </div>
+            <div class="col-lg-2 col-md-3">
+                <p class="text-light font-weight-bold mb-4 mt-md-0 mt-3">Explores</p>
+                <p>News</p>
+                <p>Blogs</p>
+                <p>Wallpaper</p>
+                <p>Comparision</p>
+            </div>
+            <div class="col-lg-2 col-md-3">
+                <p class="text-light font-weight-bold mb-4 mt-md-0 mt-3">Services</p>
+                <p>Warranty</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="text-center">©2022 GIGA-BYTE Technology Co., Ltd. All Rights Reserved.</p>
+    </footer>
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js "></script>
+</body>
+
+</html>

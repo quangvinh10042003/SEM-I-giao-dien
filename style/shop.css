@@ -90,7 +90,14 @@ select {
 }
 
 .itemSellers {
-    border: 1px solid #FF6400;
+    cursor: pointer;
+    background-color: #000;
+    border: 1px solid rgba(0, 0, 0, 0);
+    /* border: 1px solid #FF6400; */
+}
+
+.itemSellers:hover {
+    box-shadow: 0px 0px 8px 2px #FF6400;
 }
 
 .itemSellers .price {
@@ -178,9 +185,6 @@ select {
     .itemSellers {
         padding: 0;
     }
-    .banner h1 {
-        font-size: 32px;
-    }
     .bestSeller h1 {
         font-size: 24px;
     }
@@ -200,6 +204,9 @@ select {
     }
     .page span {
         font-size: 12px;
+    }
+    .banner h1 {
+        font-size: 32px;
     }
     .banner h1 {
         top: 170px;

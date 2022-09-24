@@ -1,0 +1,168 @@
+.banner {
+    height: 500px;
+}
+
+.banner img {
+    height: 100%;
+}
+
+.zBanner {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.77));
+}
+
+.banner h1 {
+    font-size: 64px;
+    color: #FF6400;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.main {
+    padding-top: 50px;
+    width: 100%;
+}
+
+.select {
+    margin: auto;
+    display: block;
+    width: 200px;
+}
+
+.select select {
+    width: 100%;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 0;
+    background-color: black;
+    color: #ffff;
+    border: 1px solid #ffff;
+}
+
+.boxSearchProduct {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.inputCompare {
+    width: 100%;
+    padding: 8px 20px;
+    border: none;
+    border: 1px solid #FF6400;
+    background-color: #282828;
+    color: #ffff;
+}
+
+.inputCompare:focus {
+    border-radius: 0px !important;
+    border-color: #FF6400 !important;
+}
+
+.vs {
+    margin-top: 200px;
+    font-size: 64px;
+    font-weight: bolder;
+    color: #FF6400;
+}
+
+.boxImg {
+    width: 80%;
+}
+
+.compareButton {
+    width: 100%;
+    background-color: #FF6400;
+    border: none;
+    border: 1px solid #FF6400;
+    padding: 8px 20px;
+    border-radius: 0;
+    color: #ffff;
+}
+
+.rowFirst {
+    background-color: #151515;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.rowSecond {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.bgFooter {
+    background-color: #1F1F1F;
+}
+
+.logoFooter {
+    width: 70px;
+    margin: auto;
+}
+
+.flexRowFooter {
+    padding: 30px 200px;
+    justify-content: space-around;
+}
+
+.flexRowFooter p {
+    cursor: pointer;
+    line-height: 10px;
+    color: #949494;
+}
+
+.itemSellers .name {
+    height: 60px;
+}
+
+@media screen and (max-width: 1100px) {
+    .flexRowFooter {
+        padding: 30px 40px;
+    }
+    .banner h1 {
+        font-size: 40px;
+    }
+    .boxImg {
+        width: 100%;
+    }
+    .inputCompare {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .compareButton {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .vs {
+        margin-top: 100px;
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .flexRowFooter p {
+        text-align: center;
+    }
+    .banner h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+    .banner h1 {
+        top: 170px;
+    }
+    .banner {
+        height: 260px;
+    }
+    .zBanner {
+        height: 260px;
+    }
+    .vs {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../style/cart.css">
+    <link rel="stylesheet" href="../style/header.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid containerFull">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="divImg">
+                        <img class="card-img" src="../images/vinhImg/logo.png" alt="">
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li class="position-relative liLevel1">
+                                <a class="aLevel1">Products <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="ulHover">
+                                    <li><a>Motherboards</a></li>
+                                    <li><a>Monitors</a></li>
+                                    <li><a>Memorys</a></li>
+                                    <li><a>Graphic Cards</a></li>
+                                    <li><a>PC Cases</a></li>
+                                    <li><a>CPU Coolers</a></li>
+                                    <li><a>Power Supplys</a></li>
+                                    <li><a>Laptops</a></li>
+                                </ul>
+                            </li>
+                            <li class="position-relative liLevel1">
+                                <a class="aLevel1">Explore <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="ulHover">
+                                    <li><a>News</a></li>
+                                    <li><a>Blogs</a></li>
+                                    <li><a>Wallpapers</a></li>
+                                    <li><a href="Compare.html">Comparision</a></li>
+                                </ul>
+                            </li>
+                            <li class="position-relative liLevel1">
+                                <a class="aLevel1">Service <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="ulHover">
+                                    <li><a>Warranty</a></li>
+                                    <li><a>About Us</a></li>
+                                    <li><a>About Gigabyte</a></li>
+                                    <li><a>Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li class="position-relative liLevel1"><a class="aLevel1">PC Building</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="rightNAV">
+                        <ul>
+                            <li class="liSearch"><a><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            <li><a><i class="fa-solid fa-user"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="logoGiga">
+                        <img class="card-img" src="../images/vinhImg/logo_gigabyte_white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header menu mobile  -->
+
+    <div class="offcanvas offcanvas-start menuMobile" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <div class="formSearch">
+                <input type="text" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <button class="buttonClose" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-x"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
+                    <li><a class="dropdown-item" href="#">Motherboard</a></li>
+                    <li><a class="dropdown-item" href="#">PC Case</a></li>
+                    <li><a class="dropdown-item" href="#">Moninitor</a></li>
+                    <li><a class="dropdown-item" href="#">Graphics Card</a></li>
+                    <li><a class="dropdown-item" href="#">Memory</a></li>
+                    <li><a class="dropdown-item" href="#">Solid State Drive</a></li>
+                    <li><a class="dropdown-item" href="#">CPU Cooler</a></li>
+                    <li><a class="dropdown-item" href="#">Power Supply</a></li>
+                    <li><a class="dropdown-item" href="#">Laptop</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Explore
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
+                    <li><a class="dropdown-item" href="#">News</a></li>
+                    <li><a class="dropdown-item" href="#">Blogs</a></li>
+                    <li><a class="dropdown-item" href="#">Wallpaper</a></li>
+                    <li><a class="dropdown-item" href="Compare.html">Comparision</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Service
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
+                    <li><a class="dropdown-item" href="#">Warranty</a></li>
+                    <li><a class="dropdown-item" href="#">About AORUS</a></li>
+                    <li><a class="dropdown-item" href="#">About GIGABYTE</a></li>
+                    <li><a class="dropdown-item" href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <button class="buttonDropdown">PC Building</button>
+        </div>
+    </div>
+
+    <!-- content  -->
+    <div class="main">
+        <div class="container box-cart">
+            <h1>Cart</h1>
+            <div class="row justify-content-between mt-3">
+                <div class="col-lg-7 col-12 pr-5 boxAllCart">
+                    <div class="row cardItem">
+                        <div class="col-lg-4 col-md-3 col-5">
+                            <img src="../images/vinhImg/detail/mainboard/mb1.webp" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                        </div>
+                        <div class="col-lg-5 col-md-6 col-7">
+                            <p class="name">B660M AORUS Elite Motherboard</p>
+                            <span>Motherboard</span>
+                            <div class="d-flex align-items-center ml-0 mt-2 position-relative">
+                                <span class="span mr-2">Quantity:  </span>
+                                <div class="boxQuantity d-flex align-items-center">
+                                    <span class="useQuantity reduceBut">-</span>
+                                    <span class="quantityInp mt-1" id="quantityInp" type="text">1</span>
+                                    <span class="useQuantity">+</span>
+                                </div>
+                                <span class="mt-2 remove">Remove</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="position-relative">
+                                <p class="price">$860</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-4">
+                    <div class="payment">
+                        <h3 class="text-light">Order Summary</h3>
+                        <div class="row">
+                            <div class="col-5">
+                                <p class="text-light">Shipping</p>
+                                <p class="text-light">Sales Tax </p>
+                                <h4 class="text-light">Subtotal</h4>
+                            </div>
+                            <div class="col-7">
+                                <p class="text-right text-light">Calculated at checkout</p>
+                                <p class="text-right text-light">Calculated at checkout</p>
+                                <h4 class="text-right text-light">$860</h4>
+                            </div>
+                        </div>
+                        <a class="btn text-light checkout" role="button" data-bs-toggle="modal" data-bs-target="#modalId">CHECKOUT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade modalBox" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog max-width-0" role="document">
+            <div class="modal-content modalCustom">
+                <form>
+                    <div class="modal-header d-block">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </button>
+                        <h2 class="text-center ml-4 mt-2">Shipping</h2>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="formGroup">
+                                    <label for="">Name</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="formGroup">
+                                    <label for="">Email</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="formGroup">
+                                    <label for="">Address</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="formGroup">
+                                    <label for="">Telephone Number</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="formGroup">
+                                            <h4 class="ml-3 mt-2">Subtotal: <span class="h4span text-dark">$680</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="formGroup">
+                                            <h4 class="ml-3 mt-2">Date: <span class="h4span text-dark">25/09/2022</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-block">
+                        <div class="ml-4 mt-2">
+                            <h2 class="text-center">Billing</h2>
+                            <div class="boxBilling">
+                                <div class="d-flex align-items-center ml-0 mt-2">
+                                    <input type="checkbox" id="checkbox"><label for="checkbox" class="labelCheckbox">Billing address is the same as shipping</label>
+                                </div>
+                            </div>
+                            <button type="submit" data-dismiss="modal" class="btn btn-primary text-light checkout checkoutModal mt-3 mb-4" role="button">CHECKOUT</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Optional: Place to the bottom of scripts -->
+    <script>
+        const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+    </script>
+
+    <footer>
+        <p class="text-center">©2022 GIGA-BYTE Technology Co., Ltd. All Rights Reserved.</p>
+    </footer>
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js "></script>
+</body>
+
+</html>
