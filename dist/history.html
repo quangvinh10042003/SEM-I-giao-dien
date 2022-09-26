@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>History</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="../style/cart.css">
+    <link rel="stylesheet" href="../style/history.css">
     <link rel="stylesheet" href="../style/header.css">
 </head>
 
@@ -130,139 +131,211 @@
         </div>
     </div>
 
-    <!-- content  -->
-    <div class="main">
-        <div class="container box-cart">
-            <h1>Cart</h1>
-            <div class="row justify-content-between mt-3">
-                <div class="col-lg-7 col-12 pr-5 boxAllCart">
-                    <div class="row cardItem">
-                        <div class="col-lg-4 col-md-3 col-5">
-                            <img src="../images/vinhImg/detail/mainboard/mb1.webp" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
-                        </div>
-                        <div class="col-lg-5 col-md-6 col-7">
-                            <p class="name">B660M AORUS Elite Motherboard</p>
-                            <span>Motherboard</span>
-                            <div class="d-flex align-items-center ml-0 mt-2 position-relative">
-                                <span class="span mr-2">Quantity:  </span>
-                                <div class="boxQuantity d-flex align-items-center">
-                                    <span class="useQuantity reduceBut">-</span>
-                                    <span class="quantityInp mt-1" id="quantityInp" type="text">1</span>
-                                    <span class="useQuantity">+</span>
-                                </div>
-                                <span class="mt-2 remove">Remove</span>
+    <div class="main col-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-12 left">
+                    <div class="userProfile item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <span>User Profile</span>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3">
-                            <div class="position-relative">
-                                <p class="price">$860</p>
+                    </div>
+                    <div class="userProfile item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <i class="fa-solid fa-user-pen"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <span>User Profile</span>
                             </div>
                         </div>
+                    </div>
+                    <div class="userProfile item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <i class="fa-solid fa-shirt"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <span>Oder History</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="userProfile item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <span>Sign Out</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile">
+                        <select> 
+                            <option value="" selected disabled hidden>Menu</option>
+                            <option value="1">User Profile</option>
+                            <option value="2">User Profile</option>
+                            <option value="3">Oder History</option>
+                            <option value="4">Sign Out</option>
+                        </select>
                     </div>
                 </div>
-                <div class="col-lg-5 mb-4">
-                    <div class="payment">
-                        <h3 class="text-light">Order Summary</h3>
-                        <div class="row">
-                            <div class="col-5">
-                                <p class="text-light">Shipping</p>
-                                <p class="text-light">Sales Tax </p>
-                                <h4 class="text-light">Subtotal</h4>
+                <div class="col-lg-9 col-md-9 col-12 right">
+                    <div class="oderHistory">
+                        <h4>Oder History</h4>
+                    </div>
+                    <div class="remove">
+                        <h6>Remove All Order </h6>
+                    </div>
+                    <div class="product col-md-12">
+                        <div class="row" style="padding: 15px;background-color: black; margin-left: 0;">
+                            <div class="col-md-4">
+                                <div class="">
+                                    <div class="date" style="margin-left: 15px;color: rgb(225, 225, 225)">
+                                        <h6>Date: 22/03/2020</h6>
+                                    </div>
+                                    <div class="img">
+                                        <img src="../image_nkt/21237.png" alt="" class="card-img">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-7">
-                                <p class="text-right text-light">Calculated at checkout</p>
-                                <p class="text-right text-light">Calculated at checkout</p>
-                                <h4 class="text-right text-light">$860</h4>
+                            <div class="col-md-6 detail">
+                                <div class="subtotal">
+                                    <h6 style="color: rgb(183, 183, 183) ;">Subtotal : $5000</h6>
+                                </div>
+                                <div class="name">
+                                    <h4 style="color: #F86902;">AORUS C300 GLASS </h4>
+                                </div>
+                                <div class="branch">
+                                    <h5>PC Case</h5>
+                                </div>
+                                <div class="consignee">
+                                    <h6>Consignee : <span>Customer</span></h6>
+                                </div>
+                                <div class="address">
+                                    <h6>Address : <span>Ha Noi</span></h6>
+                                </div>
+                                <div class="Telephone Number : ">
+                                    <h6>Telephone Number: <span>0123456789</span></h6>
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-2 price">
+                                <div class="delete">
+                                    <span>Remove</span>
+                                </div>
+                                <div class="price">
+                                    <h5>Price : $4000 </h5>
+                                </div>
+
                             </div>
                         </div>
-                        <a class="btn text-light checkout" role="button" data-bs-toggle="modal" data-bs-target="#modalId">CHECKOUT</a>
                     </div>
+                    <div class="see">
+                        <span><i  style="position: absolute; right: 40%;font-size: 30px;color: white;cursor:pointer ;" class="fa-solid fa-circle-chevron-down"></i></span>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal -->
+    <!-- main mobile  -->
+    <div class="menu-mobile position-relative">
+        <h4 style="position: absolute;font-size: 30px;color:#F86902;margin-bottom: 0px;text-align: center;top: 15%;right: 40%;">
+            Oder History
+        </h4>
+        <div class="row" style="margin-bottom: 20px;">
 
-    <!-- Modal Body -->
-    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-    <div class="modal fade modalBox" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-        <div class="modal-dialog max-width-0" role="document">
-            <div class="modal-content modalCustom">
-                <form>
-                    <div class="modal-header d-block">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </button>
-                        <h2 class="text-center ml-4 mt-2">Shipping</h2>
-                    </div>
-                    <div class="modal-body">
 
+            <div class="col-md-4 col-4" style="margin-top: 200px;">
+
+                <div class="mobile">
+                    <select> 
+                        <option value="" selected disabled hidden>Menu</option>
+                        <option value="1">User Profile</option>
+                        <option value="2">User Profile</option>
+                        <option value="3">Oder History</option>
+                        <option value="4">Sign Out</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-8 col-8" style="margin-top: 200px;">
+                <div class="remove">
+                    <h6>Remove All Order </h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="product col-md-12 position-relative">
+                <div class="row position-relative">
+                    <div class="col-md-4 col-4">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6">
-                                <div class="formGroup">
-                                    <label for="">Name</label>
-                                    <input type="text">
-                                </div>
+                            <div class="date" style="color: rgb(225, 225, 225)">
+                                <h6>Date: 22/03/2020</h6>
                             </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="formGroup">
-                                    <label for="">Email</label>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="formGroup">
-                                    <label for="">Address</label>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="formGroup">
-                                    <label for="">Telephone Number</label>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-12 mt-2">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="formGroup">
-                                            <h4 class="ml-3 mt-2">Subtotal: <span class="h4span text-dark">$680</span></h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="formGroup">
-                                            <h4 class="ml-3 mt-2">Date: <span class="h4span text-dark">25/09/2022</span></h4>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="img">
+                                <img src="../image_nkt/21237.png" alt="" class="card-img">
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer d-block">
-                        <div class="ml-4 mt-2">
-                            <h2 class="text-center">Billing</h2>
-                            <div class="boxBilling">
-                                <div class="d-flex align-items-center ml-0 mt-2">
-                                    <input type="checkbox" id="checkbox"><label for="checkbox" class="labelCheckbox">Billing address is the same as shipping</label>
-                                </div>
-                            </div>
-                            <button type="submit" data-dismiss="modal" class="btn btn-primary text-light checkout checkoutModal mt-3 mb-4" role="button">CHECKOUT</button>
+                    <div class="col-md-5 col-4 detail">
+                        <div class="subtotal">
+                            <h6 style="color: rgb(183, 183, 183) ;">Subtotal : $5000</h6>
+                        </div>
+                        <div class="name">
+                            <h4 style="color: #F86902;">AORUS C300 GLASS </h4>
+                        </div>
+                        <div class="branch">
+                            <h5>PC Case</h5>
+                        </div>
+                        <div class="consignee">
+                            <h6>Consignee : <span>Customer</span></h6>
+                        </div>
+                        <div class="address">
+                            <h6>Address : <span>Ha Noi</span></h6>
+                        </div>
+                        <div class="Telephone Number : ">
+                            <h6>Telephone Number: <span>0123456789</span></h6>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-3 col-3 price">
+                        <div class="delete">
+                            <span>Remove</span>
+                        </div>
+                        <div class="price">
+                            <h5>Price : $4000 </h5>
+                        </div>
+
+                    </div>
+                    <div class="row subMobile">
+                        <div class="col-6 delete">
+                            <span style="margin-left: 20px;padding-top: 10px;">Remove</span>
+                        </div>
+                        <div class="col-6 priceMobile">
+                            <h5>Price : $4000 </h5>
                         </div>
                     </div>
-                </form>
+                </div>
+            </div>
+            <div class="see">
+                <span><i  style="position: absolute; right: 45%;font-size: 30px;color: white;cursor:pointer ;top: 67%;" class="fa-solid fa-circle-chevron-down"></i></span>
             </div>
         </div>
     </div>
-    <!-- Optional: Place to the bottom of scripts -->
-    <script>
-        const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
-    </script>
 
     <footer>
         <p class="text-center">©2022 GIGA-BYTE Technology Co., Ltd. All Rights Reserved.</p>
     </footer>
-
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
 </html>

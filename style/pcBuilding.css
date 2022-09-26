@@ -102,10 +102,6 @@
     color: #FF6400;
 }
 
-.endBox {
-    float: right;
-}
-
 .bgModalHeader {
     background-color: #FF6400;
     width: 100%;
@@ -142,17 +138,8 @@
     z-index: 9999;
 }
 
-.productHeight {
-    max-height: 550px;
-    overflow-y: scroll;
-}
-
 .customModal {
     overflow: hidden;
-}
-
-.overHidden {
-    overflow-y: auto !important;
 }
 
 @media screen and (max-width: 1100px) {

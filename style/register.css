@@ -177,14 +177,9 @@ header:hover {
         font-size: 16px;
     }
 }
-<<<<<<< HEAD
-.background{
-    background-image: url('../image_nkt/hinh-anh-dan-pc-khung-dep-va-chat-nhat.jpg');
-=======
 
 .background {
-    background-image: url('https://toigingiuvedep.vn/wp-content/uploads/2021/08/hinh-anh-dan-pc-khung-dep-va-chat-nhat.jpg');
->>>>>>> 84dc73b66a1b6d58a8faae72a6236163b04eb221
+    background-image: url('../image_nkt/hinh-anh-dan-pc-khung-dep-va-chat-nhat.jpg');
     width: 100%;
     height: 1000px;
     background-repeat: no-repeat;
@@ -246,7 +241,7 @@ form label {
 }
 
 .form-group input {
-    padding: 20px;
+    padding: 10px;
     border-radius: 1px;
 }
 
@@ -259,6 +254,7 @@ form label {
     justify-content: space-evenly;
     align-items: center;
     margin: 10px;
+   padding: 10px;
 }
 
 .social_network .right {
@@ -273,7 +269,6 @@ form label {
     padding: 10px;
     border-radius: 50%;
 }
-<<<<<<< HEAD
 .submit{
     margin-top: 25px;
 }
@@ -282,11 +277,6 @@ form label {
 }
 .mid .col-md-5 button{
     background-color:#F86902 ;
-=======
-
-.mid button {
-    background-color: #F86902;
->>>>>>> 84dc73b66a1b6d58a8faae72a6236163b04eb221
     width: 100%;
     padding: 10px;
     /* margin: 20px 0px; */
@@ -295,8 +285,8 @@ form label {
     border: none;
     color: white;
 }
-<<<<<<< HEAD
 .submit .col-md-7 button{
+    width: 100%;
     font-size: 18px;
     padding: 12px;
     background-color:white;
@@ -311,28 +301,29 @@ form label {
     background-color: #cd5600 ;
     transition: 0.5s all;
 }
-@media (max-width: 575.98px) {
+@media screen and (max-width: 575.98px) {
     .background{
         background-image: url('../image_nkt/hinh-anh-dan-pc-khung-dep-va-chat-nhat.jpg');
-        width: 100%;
+        width: 500px;
         height: 1000px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        padding: 100px;
+        padding: 30px;
+        padding-top: 80px;
         color: white;
     }
-    
     .register{
         background-color: black;
-        width: 625px;
+        width: 100%;
         height: 800px;
         margin: 0 auto;
         opacity: 0.9;
         margin-top: 40px;
+        padding: 20px;
     }
     .register .top h5{
-        font-size: 26px;
+        font-size: 20px;
         color: white;
         text-align: center;
         padding-top: 50px;
@@ -343,14 +334,15 @@ form label {
         font-size: 20px;
         align-items: center;
         text-align: center;
-        margin: 0px auto;
+        margin: 17px auto;
         margin-top: 40px;
-        padding-left: 115px;
+        padding-left: 39px;
         font-weight: 600;
+        padding-right: 37px;
     }
     .steps .number{
         border-radius: 50%;
-        padding: 10px 22px;
+        padding:4px 20px;
     }
     .strikethrough{
         background-color: white;
@@ -358,7 +350,7 @@ form label {
         height: 10px;
     }
     form{
-        padding: 50px;
+        padding: 17px;
     }
     form label{
         margin-bottom: 5px;
@@ -367,17 +359,19 @@ form label {
         margin: 20px 0px;
     }
     .form-group input{
-        padding: 20px;
+        padding: 10px;
         border-radius: 1px;
     }
     .social_network .left h6{
-        font-size: 24px;
+        font-size: 10px;
+        display: none;
     }
     .social_network{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        margin: 10px;
+        margin: 25px;
+        padding-right: 30px;
     }
     .social_network .right{
         display: flex;
@@ -402,15 +396,16 @@ form label {
         width: 100%;
         padding: 10px;
         /* margin: 20px 0px; */
-        font-size: 20px;
+        font-size: 14px;
         font-weight: 600;
         border: none;
         color: white;
     }
     .submit .col-md-7 button{
-        font-size: 18px;
+        font-size: 10px;
         padding: 12px;
-        background-color:white;
+        background-color:
+        white;
         font-weight: 500;
         border: none;
     }
@@ -422,9 +417,4 @@ form label {
         background-color: #cd5600 ;
         transition: 0.5s all;
     }
-=======
-
-.submit .col-md-7 {
-    margin-right: 46px;
->>>>>>> 84dc73b66a1b6d58a8faae72a6236163b04eb221
 }

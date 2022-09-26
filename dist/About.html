@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="../style/about.css">
     <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <title>ABout</title>
 </head>
 
 <body>
@@ -131,115 +131,58 @@
         </div>
     </div>
 
-
-    <div class="offcanvas offcanvas-start menuMobile" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-            <div class="formSearch">
-                <input type="text" placeholder="Search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <button class="buttonClose" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-x"></i></button>
-        </div>
-        <div class="offcanvas-body">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Products
-                </button>
-                <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
-                    <li><a class="dropdown-item" href="#">Motherboard</a></li>
-                    <li><a class="dropdown-item" href="#">PC Case</a></li>
-                    <li><a class="dropdown-item" href="#">Moninitor</a></li>
-                    <li><a class="dropdown-item" href="#">Graphics Card</a></li>
-                    <li><a class="dropdown-item" href="#">Memory</a></li>
-                    <li><a class="dropdown-item" href="#">Solid State Drive</a></li>
-                    <li><a class="dropdown-item" href="#">CPU Cooler</a></li>
-                    <li><a class="dropdown-item" href="#">Power Supply</a></li>
-                    <li><a class="dropdown-item" href="#">Laptop</a></li>
-                </ul>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Explore
-                </button>
-                <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
-                    <li><a class="dropdown-item" href="#">News</a></li>
-                    <li><a class="dropdown-item" href="#">Blogs</a></li>
-                    <li><a class="dropdown-item" href="#">Wallpaper</a></li>
-                    <li><a class="dropdown-item" href="Compare.html">Comparision</a></li>
-                </ul>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Service
-                </button>
-                <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
-                    <li><a class="dropdown-item" href="#">Warranty</a></li>
-                    <li><a class="dropdown-item" href="#">About AORUS</a></li>
-                    <li><a class="dropdown-item" href="#">About GIGABYTE</a></li>
-                    <li><a class="dropdown-item" href="#">Contact us</a></li>
-                </ul>
-            </div>
-            <button class="buttonDropdown">PC Building</button>
-        </div>
-    </div>
-    <div class="">
-        <div class="background col-12">
-            <div class="register">
-                <div class="top">
-                    <h5>LOGIN</h5>
-                    <div class="steps col-12">
-                        <div class="number" style="background-color:white;font-size: 23px;">1</div>
-                        <div class="strikethrough"></div>
-                        <div class="number" style="background-color: #F86902;font-size: 23px;">2</div>
-                        <div class="strikethrough" style="background-color: #F86902"></div>
-                        <div class="number" style="background-color:white;font-size: 23px;">3</div>
+    <div class="about">
+        <div class="body">
+            <div class="container-fluid layout">
+                <div class="header">
+                    <h3>About AORUS</h3>
+                </div>
+                <div class="container">
+                    <div class="col-lg-12 col-md-12 col-sm-12 banner">
+                        <img src="'../../../img/cuongimg/header1-copy-2000x1050.png" />
+                    </div>
+                    <div class="banner">
+                        <p class="about-title">Enter the Falcon</p>
+                        <p>
+                            <span class="about-text">
+                                AORUS, a premium gaming brand powered by GIGABYTE,
+                                delivers a full spectrum of gaming products ranging from gaming laptops,
+                                motherboards, graphics cards, mechanical gaming keyboards, to many other
+                                gaming hardware and gears,
+                                offering the most extreme gaming experiences for enthusiasts worldwide!
+                            </span>
+                        </p>
+                    </div>
+                    <div class="banner">
+                        <p class="about-title">Team Up. Fight On.</p>
+                        <p>
+                            <span class="about-text">
+                                AORUS shares the same passion with gamers who devote
+                                their heart and soul to gaming. With AORUS, the pinnacle of our hardware excellence,
+                                we are committed to bring a wide array of gaming innovation that delivers ultimate
+                                performance and exemplifies the PC’s capability for bringing gamers unprecedented
+                                delights.
+                            </span>
+                        </p>
+                        <p>
+                            <span class="about-text">
+                                We are looking to team up with gamers in their
+                                quest for gaming, to challenge the limits without fear,
+                                and to fight on as we rise to the ultimate glory!
+                            </span>
+                        </p>
                     </div>
                 </div>
-                <div class="mid col-12">
-                    <form [formGroup]="formIn4" (ngSubmit)="register()">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email *</label>
-                            <input type="email" class="form-control" id="" aria-describedby="emailHelp" placeholder="Please enter your email" formControlName="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Password *</label>
-                            <input type="password" class="form-control" id="" aria-describedby="emailHelp" placeholder="enter password here" formControlName="password">
-                        </div>
-                        <div class="social_network">
-                            <div class="left">
-                                <h6>Or login with</h6>
-                            </div>
-                            <div class="right">
-                                <div class="icon">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </div>
-                                <div class="icon">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </div>
-                                <div class="icon">
-                                    <i class="fa-brands fa-google-plus-g"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="submit">
-                            <div class="row">
-                                <div class="col-md-7 col-7">
-                                    <button><a class="text-dark text text-decoration-none" href="register.html">Create your account?</a></button>
-                                </div>
-                                <div class="col-md-5 col-5">
-                                    <button type="submit">LOGIN</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+
             </div>
         </div>
+        <footer>
+            <p class="text-center">©2022 GIGA-BYTE Technology Co., Ltd. All Rights Reserved.</p>
+        </footer>
+
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js "></script>
     </div>
-    <footer>
-        <p class="text-center">©2022 GIGA-BYTE Technology Co., Ltd. All Rights Reserved.</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
+
 
 </html>

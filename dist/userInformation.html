@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>User Information</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="../style/userInfomation.css">
     <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
@@ -130,108 +130,82 @@
             <a class="btn btn-secondary buttonDropdown" href="PCBuilding.html">PC Building</a>
         </div>
     </div>
+    <div>
 
-
-    <div class="offcanvas offcanvas-start menuMobile" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-            <div class="formSearch">
-                <input type="text" placeholder="Search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <button class="buttonClose" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-x"></i></button>
-        </div>
-        <div class="offcanvas-body">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Products
-                </button>
-                <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
-                    <li><a class="dropdown-item" href="#">Motherboard</a></li>
-                    <li><a class="dropdown-item" href="#">PC Case</a></li>
-                    <li><a class="dropdown-item" href="#">Moninitor</a></li>
-                    <li><a class="dropdown-item" href="#">Graphics Card</a></li>
-                    <li><a class="dropdown-item" href="#">Memory</a></li>
-                    <li><a class="dropdown-item" href="#">Solid State Drive</a></li>
-                    <li><a class="dropdown-item" href="#">CPU Cooler</a></li>
-                    <li><a class="dropdown-item" href="#">Power Supply</a></li>
-                    <li><a class="dropdown-item" href="#">Laptop</a></li>
-                </ul>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Explore
-                </button>
-                <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
-                    <li><a class="dropdown-item" href="#">News</a></li>
-                    <li><a class="dropdown-item" href="#">Blogs</a></li>
-                    <li><a class="dropdown-item" href="#">Wallpaper</a></li>
-                    <li><a class="dropdown-item" href="Compare.html">Comparision</a></li>
-                </ul>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Service
-                </button>
-                <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
-                    <li><a class="dropdown-item" href="#">Warranty</a></li>
-                    <li><a class="dropdown-item" href="#">About AORUS</a></li>
-                    <li><a class="dropdown-item" href="#">About GIGABYTE</a></li>
-                    <li><a class="dropdown-item" href="#">Contact us</a></li>
-                </ul>
-            </div>
-            <button class="buttonDropdown">PC Building</button>
-        </div>
-    </div>
-    <div class="">
-        <div class="background col-12">
-            <div class="register">
-                <div class="top">
-                    <h5>LOGIN</h5>
-                    <div class="steps col-12">
-                        <div class="number" style="background-color:white;font-size: 23px;">1</div>
-                        <div class="strikethrough"></div>
-                        <div class="number" style="background-color: #F86902;font-size: 23px;">2</div>
-                        <div class="strikethrough" style="background-color: #F86902"></div>
-                        <div class="number" style="background-color:white;font-size: 23px;">3</div>
-                    </div>
+        <div class="body">
+            <div class="fakeBody"></div>
+            <div class="container-fluid layout">
+                <div class="title">
+                    <h2>User Information</h2>
                 </div>
-                <div class="mid col-12">
-                    <form [formGroup]="formIn4" (ngSubmit)="register()">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email *</label>
-                            <input type="email" class="form-control" id="" aria-describedby="emailHelp" placeholder="Please enter your email" formControlName="email">
+                <div class="col-lg-12  ">
+                    <div class="row">
+                        <div class="col-lg-3 hj">
+                            <div class=""></div>
+                            <button class="btn-user">
+                               <a class="text-decoration-none text-light" href="userInformation.html">
+                                <span class="btn-icon"><i class="fa-regular fa-circle-user"></i></span>
+                                <span>User Infomation</span>
+                               </a>
+                            </button>
+                            <button class="btn-user">
+                               <a href="user_setting.html" class="text-decoration-none text-light">
+                                <span class="btn-icon"><i class="fa-solid fa-wrench"></i></span>
+                                <span>User Setting</span>
+                               </a>
+                            </button>
+                            <button class="btn-user">
+                               <a href="history.html" class="text-decoration-none text-light">
+                                <span class="btn-icon"><i class="fa-solid fa-clock-rotate-left"></i></span>
+                                <span>History Order</span>
+                               </a>
+                            </button>
+                            <button class="btn-user">
+                                <span class="btn-icon"><i class="fa-solid fa-right-to-bracket"></i></span>
+                                <span>Sign Out</span>
+                            </button>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Password *</label>
-                            <input type="password" class="form-control" id="" aria-describedby="emailHelp" placeholder="enter password here" formControlName="password">
+                        <div class="col-md-3 hk col-sm-1">
+                            <select class="form-select rounded-0" aria-label="Default select example">
+                                <option selected>User Menu <i class="fa-solid fa-angle-down text-light"></i></option>
+                                <option value="1">User InfomationOne <i class="fa-solid fa-angle-down text-light"></i></option>
+                                <option value="2">User Setting <i class="fa-solid fa-angle-down text-light"></i></option>
+                                <option value="3">History Order <i class="fa-solid fa-angle-down text-light"></i></option>
+                                <option value="4">Sign Out <i class="fa-solid fa-angle-down text-light"></i></option>
+                            </select>
                         </div>
-                        <div class="social_network">
-                            <div class="left">
-                                <h6>Or login with</h6>
-                            </div>
-                            <div class="right">
-                                <div class="icon">
-                                    <i class="fa-brands fa-facebook"></i>
+                        <div class="col-lg-9 mt-10 ">
+                            <form class="row g-3">
+                                <div class="col-md-4">
+                                    <label for="validationDefault01" class="form-label">First name</label>
+                                    <input type="text" class="form-control ps-0" id="validationDefault01" value="Uzumaki Naruto" disabled required>
                                 </div>
-                                <div class="icon">
-                                    <i class="fa-brands fa-twitter"></i>
+                                <div class="col-md-4">
+                                    <label for="validationDefault02" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control ps-0" id="validationDefault02" value="khongba03@gmail.com" required disabled>
                                 </div>
-                                <div class="icon">
-                                    <i class="fa-brands fa-google-plus-g"></i>
+                                <div class="col-md-4">
+                                    <label for="validationDefaultUsername" class="form-label">Telephone Number</label>
+                                    <input type="text" class="form-control ps-0" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required disabled value="0362285746">
                                 </div>
-                            </div>
+                                <div class="col-md-4">
+                                    <label for="validationDefault03" class="form-label">Address</label>
+                                    <input type="text" class="form-control ps-0" id="validationDefault03 " required disabled value="Konoha">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="validationDefault04" class="form-label">Country</label>
+                                    <input type="text" class="form-control ps-0" id="validationDefault03 " required disabled value="Elder Flame">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="validationDefault05" class="form-label">Password</label>
+                                    <input type="password" class="form-control ps-0" id="validationDefault05" required value="Elder Flame" disabled>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn rounded-0" type="submit">Delete Account</button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="submit">
-                            <div class="row">
-                                <div class="col-md-7 col-7">
-                                    <button><a class="text-dark text text-decoration-none" href="register.html">Create your account?</a></button>
-                                </div>
-                                <div class="col-md-5 col-5">
-                                    <button type="submit">LOGIN</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
